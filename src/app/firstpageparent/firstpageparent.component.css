@@ -1,0 +1,106 @@
+html, body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar-brand {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Navbar styles */
+.navbar {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #eef0f0;
+  width: 150px; /* Add this line or adjust the width as needed */
+}
+
+.navbar-nav {
+  width: 100%;
+  padding-top: 2px;
+}
+
+.nav-item {
+  width: 100%;
+
+}
+
+.nav-link {
+  padding: 10px 20px;
+  color: #333;
+
+}
+
+
+
+/* Content styles */
+
+.ml-auto{
+  margin-top: 120px;
+  margin-left: 250px;
+}
+
+.page-content {
+  margin-left: 400px; /* Account for the width of the navbar */
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #360d0d; /* Set the background color to white */
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #207198; ;
+}
+
+.subheading {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+#start-btn {
+  background-color: #207198;
+  color: #FFFFFF;
+  border: #37677E;
+  margin-bottom: 30px;
+
+}
+.btn-primary {
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 50%;
+  margin-left: 240px;
+  margin-top: 20px;
+}
+
+/* Table styles */
+
+.table th {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.table td {
+  padding: 8px;
+}
+
+.btn-link {
+  color: #FE904B;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+td{
+  color: rgb(57, 57, 57);
+}

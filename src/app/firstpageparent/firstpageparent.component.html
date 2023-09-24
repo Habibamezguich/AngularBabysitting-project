@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="/firstpageparent">
+    <img src="assets/images/logo.png" style="height: 30px; width: 140px; margin-top: 20%;" alt="Logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/applications">Babysitters</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/parentsetting">Profil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/FAQ">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="logout($event)" *ngIf="loggedIn">Deconnexion</a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="ml-auto">
+  <h2 class="heading">Mes offres d'emploi</h2>
+  <p class="subheading">Publier une offre d'emploi pour trouver une baby-sitter rapidement</p>
+
+ <button class="btn btn-primary" id="start-btn"  routerLink="/jobofferform" >Publier une offre d'emploi</button>
+</div>
+
+
+
+
+    <!-- Table to display the job offers -->
+<table class="table">
+  <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Description</th>
+        <th scope="col">Ville</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Date</th>
+        <th scope="col">Status</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let offre of Offres; let i = index">
+      <th scope="row">{{offre.id}}</th>
+      <td>{{offre.description}}</td>
+      <td>{{offre.ville}}</td>
+      <td>{{offre.salary}}</td>
+      <td>{{offre.date}}</td>
+      <td>{{offre.status}}</td>
+      <td>
+
+        <button class="btn btn-link" [routerLink]="['/updateform', offre.id]">Modifier</button>
+        <button class="btn btn-link"(click)="delete(offre.id,i)">Supprimer</button>
+
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,141 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <a class="back-link" href="javascript:history.back()">
+        <button class="btn btn-outline-success my-2 my-sm-0" id="btn">🢀</button>
+      </a>
+    </div>
+
+
+    <div class="col-lg-6">
+      <div class="input-group">
+        <select class="form-control" [(ngModel)]="selectedCity">
+          <option value="all">Recherche par ville</option>
+          <option value="Tunis">Tunis</option>
+          <option value="Ariana">Ariana</option>
+          <option value="Ben Arous">Ben Arous</option>
+          <option value="Manouba">Manouba</option>
+        </select>
+        <div class="input-group-append">
+          <button class="btn btn-base" type="button" id="search-button" (click)="filterCandidates()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  <div class="row">
+    <div class="col-12">
+      <div class="card card-margin">
+        <div class="card-body">
+          <div class="row search-body">
+            <div class="col-lg-12">
+              <div class="search-result">
+                <div class="result-header">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="records">Affichage: <b>1-10</b> sur <b>100</b> résultats</div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="result-actions">
+                        <div class="result-views">
+                          <button type="button" class="btn btn-soft-base btn-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-list"
+                            >
+                              <line x1="8" y1="6" x2="21" y2="6"></line>
+                              <line x1="8" y1="12" x2="21" y2="12"></line>
+                              <line x1="8" y1="18" x2="21" y2="18"></line>
+                              <line x1="3" y1="6" x2="3" y2="6"></line>
+                              <line x1="3" y1="12" x2="3" y2="12"></line>
+                              <line x1="3" y1="18" x2="3" y2="18"></line>
+                            </svg>
+
+                          </button>
+                          <button type="button" class="btn btn-soft-base btn-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-grid"
+                            >
+                              <rect x="3" y="3" width="7" height="7"></rect>
+                              <rect x="14" y="3" width="7" height="7"></rect>
+                              <rect x="14" y="14" width="7" height="7"></rect>
+                              <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-body">
+                  <div class="table-responsive">
+                    <table class="table widget-26">
+                      <tbody>
+                        <!-- Loop through each candidate and display their information -->
+                        <tr *ngFor="let candidate of candidates">
+                          <td>
+                            <div class="widget-26-job-title">
+                              <a href="#">{{ candidate.name }} {{ candidate.prenom }}</a>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="widget-26-job-info">
+                              <p class="text-muted m-0">
+                                <span class="location">{{ candidate.ville }}</span>
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="widget-26-job-info">
+                              <p class="text-muted m-0">
+                                <a [href]="candidate.cv_link" target="_blank">{{ candidate.cv }}</a>
+                              </p>
+                              <p class="text-muted m-0">
+                                <a [href]="candidate.certificat_secourisme_link" target="_blank">{{ candidate.certificat_secourisme }}</a>
+                              </p>
+                            </div>
+                          </td>
+                          <div class="widget-26-job-info text-right">
+                            <button class="btn btn-" id="msg" (click)="sendMessage(candidate.id,candidate) ">
+                              Envoyer un message
+                            </button>
+
+
+                          </div>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      </div>
+    </div>
+  </div>
+</div>

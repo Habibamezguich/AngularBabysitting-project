@@ -1,0 +1,98 @@
+
+
+
+    <!-- Arrow to get back -->
+    <div class="first">
+      <a class="back-link" href="javascript:history.back()">
+        <a class="btn btn-outline-success my-2 my-sm-0" id="btn"> 🢀</a>
+      </a>
+    </div>
+
+
+<div class="container">
+<div class="row justify-content-center">
+  <div class="col-12 mt-4">
+    <h2 style="text-align: left; font-size: 32px; font-weight: bold; margin-left: 160px ;">Mise à jour des informations personnelles</h2>
+  </div>
+  <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+      <div class="my-4">
+
+
+        <div class="col-md-3 text-center mb-5">
+
+        </div>
+        <div class="col">
+
+            <div class="">
+                <div class="">
+                </div>
+            </div>
+
+
+
+      <form [formGroup]="editForm" (submit)="onSubmit()">
+        <!-- Display success message if available -->
+        <div *ngIf="successMessage" class="alert alert-success">
+          {{ successMessage }}
+        </div>
+
+        <!-- Display error message if available -->
+        <div *ngIf="errorMessage" class="alert alert-danger">
+          {{ errorMessage }}
+        </div>
+
+
+
+        <div class="form-group ">
+          <label for="name">Prénom</label>
+          <input type="text" formControlName="name" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="prenom">Nom</label>
+          <input type="text" formControlName="prenom" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" formControlName="email" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="adresse">Adresse</label>
+          <input type="text" formControlName="adresse" class="form-control" />
+        </div>
+
+        <br>
+        <div class="col-md-6">
+          <p class="mb-2">Mot de passe requis</p>
+          <p class="small text-muted mb-2">Pour créer un nouveau mot de passe, vous devez respecter toutes les exigences suivantes :</p>
+          <ul class="small text-muted pl-4 mb-0">
+              <li>Minimum 8 characteres</li>
+              <li>Ne peut pas être identique au mot de passe précédent.</li>
+          </ul>
+      </div>
+
+
+        <!-- Password fields -->
+        <div class="form-group">
+          <label for="current_password"> Mot de passe actuel</label>
+          <input type="password" formControlName="current_password" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="new_password">Nouveau mot de passe</label>
+          <input type="password" formControlName="new_password" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="password_confirmation">Confirmer le nouveau mot de passe</label>
+          <input type="password" formControlName="password_confirmation" class="form-control" />
+        </div>
+        <br>
+
+        <button type="submit" id="start-btn" class="btn btn-primary">Enregistrer</button>
+      </form>
+    </div>
+  </div>
+</div>

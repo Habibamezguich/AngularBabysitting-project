@@ -1,0 +1,88 @@
+.form-group input.ng-invalid {
+  border-left: 5px solid red;
+}
+
+.form-group input.ng-valid {
+  border-left: 5px solid green;
+}
+
+#title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  color: #207198;
+}
+
+/* Style the form container */
+
+/* Style the form container */
+form {
+  margin: 100px auto 80px;
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form labels */
+form label {
+  font-weight: bold;
+  color: #666;
+}
+
+/* Style the form inputs and selects */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form button */
+form button {
+  background-color: #207198;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #207198;
+}
+
+.password-input-container {
+  position: relative;
+  align-items: center;
+}
+
+.password-input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 20%;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  align-items: right;
+}
+
+/* Adjust the icon styles */
+.toggle-password .fa {
+  color: #ffffff; /* Change to desired color */
+}

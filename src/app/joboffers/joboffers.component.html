@@ -1,0 +1,63 @@
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="/firstpageparent">
+    <img src="assets/images/logo.png" style="height: 30px; width: 140px; margin-top: 20%;" alt="Logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/babysittersetting">Profil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/babysittermessages">Messages</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/FAQ">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="Logout($event)" *ngIf="loggedIn">Deconnexion</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="ml-auto">
+      <h2 class="heading">Les offres d'emploi</h2>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-12">
+      <div class="card" *ngFor="let offer of jobOffers">
+        <div class="card-body">
+          <h5 class="card-title">{{ offer.title }}</h5>
+          <p class="card-text">Parent ID: {{ offer.user_id }}</p>
+          <p class="card-text">Description: {{ offer.description }}</p>
+          <p class="card-text">Ville: {{ offer.ville }}</p>
+          <p class="card-text">Salaire: {{ offer.salary }} DT/h</p>
+          <p class="card-text">Date: {{ offer.date }}</p>
+          <p class="card-text">Status: {{ offer.status }}</p>
+          <!-- Add any other fields you want to display -->
+
+          <!-- Add the "Envoyer un message" button here and pass the parent ID -->
+          <button class="btn btn-primary" (click)="sendMessage(offer.user_id,offer?.user)">
+            Envoyer un message
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

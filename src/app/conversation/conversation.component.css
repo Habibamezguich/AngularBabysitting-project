@@ -1,0 +1,67 @@
+/*styling the back button */
+.first {
+  text-align: left;
+  margin-top: 18px;
+  margin-left: 15px;
+}
+
+.btn-outline-success {
+  color: #FE904B;
+  border-color: #FE904B;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #FE904B;
+  border-color: #FE904B;
+}
+
+
+
+
+.chatContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  width: 50%;
+}
+
+.chatSender{
+  font-weight: bold;
+  color: #207198;
+}
+
+.chatContent{
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #207198;
+  color: #fff;
+}
+
+.chatTime{
+  font-size: 10px;
+  color: #207198;
+}
+
+.chatInput{
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #207198;
+  width: 50%;
+}
+
+.chatSubmitBtn{
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #207198;
+  color: #fff;
+  border: 1px solid #207198;
+}
+

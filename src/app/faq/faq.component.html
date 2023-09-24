@@ -1,0 +1,130 @@
+<!-- Arrow to go back -->
+<div class="first">
+    <a class="back-link" href="javascript:history.back()">
+      <a class="btn btn-outline-success my-2 my-sm-0" id="btn"> 🢀</a>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-4">
+        <h2 style="text-align: center; font-size: 32px; font-weight: bold;">Questions Fréquentes</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mx-auto col-lg-10 m-5" style="width: 70%">
+        <div id="accordionExample">
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" (click)="toggleCollapse(0)">
+                  Est-ce que vous acceptez les étudiant(e)s?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" [class.collapse]="!collapsed[0]" [class.show]="collapsed[0]" aria-labelledby="headingOne">
+              <div class="card-body">
+                <p>Oui, bien sûr ! Le babysitting est généralement un job étudiant.  Notre application accueille les étudiants qui souhaitent gagner de l'argent supplémentaire en offrant leurs services de babysitting pendant leur temps libre.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" (click)="toggleCollapse(1)">
+                  Comment puis-je réserver un babysitter ?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" [class.collapse]="!collapsed[1]" [class.show]="collapsed[1]" aria-labelledby="headingTwo">
+              <div class="card-body">
+                <p>Lorsque vous êtes inscrit en tant que parent, vous avez la possibilité de parcourir les profils des babysitters disponibles dans votre région. Une fois que vous avez sélectionné un babysitter qui répond à vos besoins, vous pouvez entamer une conversation en temps réel avec lui via notre fonction de chat. Cela vous permet de discuter et de clarifier les détails avant de finaliser la réservation.
+                   </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" (click)="toggleCollapse(2)">
+                  Les babysitters sont-ils payés à travers la plateforme ou par les parents directement?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" [class.collapse]="!collapsed[2]" [class.show]="collapsed[2]" aria-labelledby="headingThree">
+              <div class="card-body">
+                <p>La rémunération des babysitters est versée de la part des familles avec qui elles travaillent.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" (click)="toggleCollapse(3)">
+                  Comment sont vérifiés les antécédents des étudiants ?                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" [class.collapse]="!collapsed[3]" [class.show]="collapsed[3]" aria-labelledby="headingThree">
+              <div class="card-body">
+                <p>Tous les étudiants doivent passer par un processus de vérification rigoureux. Cela comprend des vérifications de références, des vérifications d'antécédents et des entretiens. Nous nous assurons que seuls des babysitters dignes de confiance sont présents sur notre plateforme.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" (click)="toggleCollapse(4)">
+                  Comment puis-je contacter le support en cas de problème technique ?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" [class.collapse]="!collapsed[4]" [class.show]="collapsed[4]" aria-labelledby="headingThree">
+              <div class="card-body">
+                <p> Si vous rencontrez des problèmes techniques avec l'application, vous pouvez nous contacter via le centre d'assistance dans l'application ou en nous envoyant un e-mail à Kidzone@contact.com. Nous ferons de notre mieux pour résoudre vos problèmes rapidement.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" (click)="toggleCollapse(5)">
+                  Est-ce que je dois avoir une expérience pour devenir babysitter sur l'application ?                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" [class.collapse]="!collapsed[5]" [class.show]="collapsed[5]" aria-labelledby="headingThree">
+              <div class="card-body">
+                <p>Bien que l'expérience en garde d'enfants soit un plus, elle n'est pas obligatoire. Nous encourageons les étudiants à postuler s'ils ont un bon sens des responsabilités et un désir d'apprendre.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" (click)="toggleCollapse(6)">
+                  Les babysitters sont-ils payés à travers la plateforme ou par les parents directement?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" [class.collapse]="!collapsed[6]" [class.show]="collapsed[6]" aria-labelledby="headingThree">
+              <div class="card-body">
+                <p>La rémunération des babysitters est versée de la part des familles avec qui elles travaillent.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>

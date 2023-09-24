@@ -1,0 +1,47 @@
+  .btn-primary {
+    border-color: var(#207198);
+  }
+
+.section {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .section h2 {
+    margin-bottom: 30px;
+  }
+
+  .section img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+
+  .btn btn-primary{
+    margin-top: 100%;
+    margin-bottom: 100px;
+    background-color: #67C1F3;
+  }
+
+  #start-btn{
+    background-color:#207198;
+    border: #207198;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .row:before {
+    content: '';
+    display: block;
+    width: 1.5px;
+    height: 55%;
+    margin-top: 12%;
+    background-color: #67C1F3;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+

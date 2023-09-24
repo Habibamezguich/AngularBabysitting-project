@@ -1,0 +1,28 @@
+<form #loginForm="ngForm" (ngSubmit)="onSigninbbSubmit()">
+
+  <p id="title">Se connecter</p>
+  <p style="font-size: 10px;">Vous n'avez pas de compte ? Créer un compte <a href="/signup" style="color: #FE904B;">étudiant</a></p>
+
+  <div class="alert alert-danger" [hidden]="!error">
+    {{error}}
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Address email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer Email" [(ngModel)]="form.email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Mot de passe</label>
+    <div class="password-input-container">
+      <input type="{{ showPassword ? 'text' : 'password' }}" class="form-control" id="exampleInputPassword1" placeholder="Entrer Mot de passe" [(ngModel)]="form.password" name="password" required>
+      <button type="button" class="toggle-password" (click)="togglePasswordVisibility()">
+        <i class="fa" [ngClass]="{'fa-eye': showPassword, 'fa-eye-slash': !showPassword}"></i>
+      </button>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Connexion</button>
+  <a routerLink="" style="float: right;color: #207198;">Mot de passe oublié</a>
+
+</form>

@@ -1,0 +1,97 @@
+/*styling the back button */
+.first {
+  text-align: left;
+  margin-top: 18px;
+  margin-left: 15px;
+}
+
+#start-btn {
+  background-color: #207198;
+  color: #FFFFFF;
+  border: #37677E;
+  margin-bottom: 30px;
+}
+
+.btn-outline-success {
+  color: #FE904B;
+  border-color: #FE904B;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #FE904B;
+  border-color: #FE904B;
+}
+
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  margin: 20px 0;
+}
+
+/* Profile Picture Styles */
+.img-fluid {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Name and Role Styles */
+h4 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.text-muted {
+  color: #888;
+}
+
+/* Description Styles */
+p {
+  line-height: 1.6;
+}
+
+/* Certificate and CV Styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 767px) {
+  .col-md-4 {
+    text-align: center;
+  }
+
+  .col-md-4 img {
+    margin-bottom: 10px;
+  }
+
+  .col-md-8 {
+    text-align: left;
+  }
+
+  .col-md-8 p {
+    margin-bottom: 10px;
+  }
+}

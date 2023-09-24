@@ -1,0 +1,37 @@
+<!-- Arrow to go back -->
+<div class="first">
+  <a class="back-link" href="javascript:history.back()">
+    <a class="btn btn-outline-success my-2 my-sm-0" id="btn"> 🢀</a>
+  </a>
+</div>
+
+
+<div class="container">
+  <h2>Conversation with {{ babysitterName }}</h2>
+
+  <div class="messages">
+    <div class="message" *ngFor="let message of messages">
+      <p>{{ message.text }}</p>
+    </div>
+  </div>
+
+  <form (ngSubmit)="sendMessage()">
+
+    <!-- Add the content field -->
+    <input type="text" [(ngModel)]="newContent"  class="chatInput" name="content" placeholder="Type your content...">
+
+    <button type="submit" class="chatSubmitBtn">Send</button>
+  </form>
+
+  <!-- show list of messages -->
+  <div >
+    <div class="chatContainer" *ngFor="let message of messages" >
+      <!-- show name of sender -->
+      <h6 class="chatSender">{{ message?.sender?.name }}  {{message?.sender?.prenom}}</h6>
+      <!-- show content of message -->
+      <p class="'chatContent">{{ message.content }}</p>
+      <small class="chatTime">{{ message.created_at }}</small>
+
+    </div>
+
+</div>

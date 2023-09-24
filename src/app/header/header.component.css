@@ -1,0 +1,148 @@
+/* CSS to increase the logo size without affecting other elements */
+#LOGO {
+  margin-top: 10px;
+  margin-left: 30px;
+  height: 35px;
+}
+
+
+#start-btn {
+  background-color: #FE904B;
+  color: white;
+  border-color: #FE904B;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Your existing CSS styles */
+.navbar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  left: auto;
+  display: flex; /* Add flex display to make logo and navbar elements in the same line */
+  align-items: center; /* Center elements vertically within the navbar */
+}
+
+.navbar-nav {
+  margin-right: 100px;
+  margin-top: 8px;
+  display: flex; /* Add flex display to make navbar items in the same line */
+  align-items: center; /* Center elements vertically within the navbar */
+}
+
+.nav-link {
+  margin-right: 80px;
+  color: #207198;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.btn-outline-success {
+  color: #FE904B;
+  border-color: #FE904B;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #FE904B;
+  border-color: #FE904B;
+}
+
+#btn {
+  margin-right: 10px;
+}
+
+#btn0 {
+  margin-right: 10px;
+}
+
+
+/* CSS dropdown button  */
+
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+/* Dropdown */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+    color: #FE904B;
+    margin-right: 40px;
+    background-color: transparent;
+
+}
+
+
+.dd-button {
+  display: inline-block;
+  border: 1px solid #FE904B;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  padding-top: 4px;
+  border-color: #FE904B;
+}
+
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  background-color: #ffffff;
+  list-style-type: none;
+  margin-top: 19px;
+  margin-right: 30px;
+  background-color: transparent;
+
+}
+
+.dd-input + .dd-menu {
+  display: none;
+  background-color: transparent;
+
+
+}
+
+.dd-input:checked + .dd-menu {
+  display: block;
+  background-color: transparent;
+
+}
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+  background-color: transparent;
+
+}
+
+
+.dd-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+  background-color: transparent;
+
+}
+

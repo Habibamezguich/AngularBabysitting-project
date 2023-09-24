@@ -1,0 +1,149 @@
+
+/*styling the back button */
+.first {
+  text-align: left;
+  margin-top: 18px;
+  margin-left: 15px;
+}
+
+.btn-outline-success {
+  color: #FE904B;
+  border-color: #FE904B;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #FE904B;
+  border-color: #FE904B;
+}
+
+
+
+
+
+
+
+
+
+/* Styling for the modal dialog */
+.modal-dialog {
+  max-width: 700px;
+}
+
+/* Styling for the modal content */
+
+
+/* Styling for the modal header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close {
+  cursor: pointer;
+}
+
+/* Styling for the modal body */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for form elements */
+.form-group {
+  margin-bottom: 15px;
+  margin: 17px auto 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Styling for the submit button */
+#start-btn {
+  background-color: #207198;
+  color: #FFFFFF;
+  border: #37677E;
+  margin-bottom: 30px;
+}
+
+
+
+/* Optional: Center the modal on the page */
+.modal-dialog-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* Style for the title */
+#title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  color: #207198;
+}
+
+/* Style the form container */
+form {
+  width: 70%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin: 50px auto 80px;
+}
+
+/* Style the form labels */
+form label {
+  font-weight: bold;
+  color: #666;
+}
+
+/* Style the form inputs and selects */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the selected option in the dropdown */
+option.selected {
+  color: #666;
+}
+
+/* Style the form button */
+form button {
+  background-color: #207198;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background-color: #207198;
+}

@@ -1,0 +1,63 @@
+<!-- Arrow to go back -->
+<div class="first">
+  <a class="back-link" href="javascript:history.back()">
+    <a class="btn btn-outline-success my-2 my-sm-0" id="btn"> 🢀</a>
+  </a>
+</div>
+
+
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+
+    <div class="modal-body">
+      <form [formGroup]="updateForm" (ngSubmit)="onUpdate()">
+          <p id="title">Mettre à jour offre d'emploi</p>
+
+
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" id="description"  formControlName="description">
+        </div>
+        <div class="form-group">
+          <label for="ville">Ville</label>
+          <select class="form-control" id="ville" formControlName="ville">
+            <option value="" disabled>Select a ville</option>
+            <option value="Tunis">Tunis</option>
+            <option value="Ariana">Ariana</option>
+            <option value="Ben arous">Ben arous</option>
+            <option value="Manouba">Manouba</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="salary">Paiement (DT/h)</label>
+          <input type="number" class="form-control" id="salary" formControlName="salary">
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" class="form-control" id="date" formControlName="date">
+        </div>
+
+
+
+
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select class="form-control" id="status" formControlName="status">
+            <option value="" disabled>Select a status</option>
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+          </select>
+        </div>
+
+
+
+
+
+        <button type="submit" class="btn btn-primary" id="start-btn">Mettre à jour</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+

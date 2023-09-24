@@ -1,0 +1,69 @@
+/*styling the back button */
+.first {
+  text-align: left;
+  margin-top: 18px;
+  margin-left: 15px;
+}
+
+.btn-outline-success {
+  color: #FE904B;
+  border-color: #FE904B;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #FE904B;
+  border-color: #FE904B;
+}
+
+
+
+
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+}
+
+.card-body {
+  background-color: #fff;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #207198;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  color: #FE904B;
+}
+
+.btn-link.collapsed:before {
+  content: '+';
+}
+
+.btn-link:not(.collapsed):before {
+  content: '-';
+}
+
+.btn-link:focus {
+  box-shadow: none;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
